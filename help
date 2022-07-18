@@ -1,0 +1,9 @@
+Kafka-springboot:
+	-> kafka configuration can be provided directly in application.properties.
+	-> define topic using @configuration annotation(here all configurations are defined inside config package.)
+	-> run kafka and zookeeper before running the application 
+	-> after running check followings
+		-> http://localhost:8080/hi
+		-> http://localhost:8080/kafka/publish?message=hello
+			consumer application will print received msg on console itself. 
+
